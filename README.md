@@ -41,6 +41,7 @@ pip install -r requirements.txt
 Using PyInstaller:
 
 ```bash
-python -m PyInstaller --onefile --noconsole  --icon="icon.ico"  main.py
+python -m PyInstaller --onefile --noconsole  --icon=".\images\icon.ico"  main.py
 ```
+
 
