@@ -36,3 +36,11 @@ pip install -r requirements.txt
 3. Click **Start**  
 4. Wait until installation is finished
 
+## Build Executable
+
+Using PyInstaller:
+
+```bash
+python -m PyInstaller --onefile --noconsole  --icon="icon.ico"  main.py
+```
+
