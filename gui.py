@@ -107,7 +107,6 @@ def run():
     window_log_output = scrolledtext.ScrolledText(master=window_logs,wrap="word", state="disabled", height=0, width= 20)
     window_log_output.tag_config('error', foreground="red")
     window_log_output.tag_config('success', foreground="green")
-    window_log_output.tag_config('neutral', foreground="black")
 
 # Loop
     window_main.grid(row=0,column= 0, sticky="nswe")
@@ -118,4 +117,5 @@ def run():
     window_log_output.grid(row=0,column=0,sticky="nswe",pady=(0,5))
 
     window.protocol("WM_DELETE_WINDOW", close)
+
     window.mainloop()
