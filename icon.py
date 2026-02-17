@@ -8,10 +8,8 @@ def GET_ICON():
     icondata = base64.b64decode(icon_string)
 
     tempfile =os.path.abspath('icon.ico')
-    iconfile = open(tempfile, "wb")
+    with open(tempfile, "wb") as iconfile:
+        iconfile.write(icondata)
 
-    iconfile.write(icondata)
-    iconfile.close()
-
-    return(tempfile)
+    return tempfile
     
