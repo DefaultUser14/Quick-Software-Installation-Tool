@@ -29,7 +29,6 @@ def install_software(package_list, log_callback):
                 elif installer_path.suffix.lower() == ".exe":
                     subprocess.run([str(installer_path), "/S"], check=True, cwd=r'C:\WINDOWS\system32')
                 
-                #subprocess.run(command, check=True, cwd=r'C:\WINDOWS\system32')
                 log_callback(f"{n+1}/{len(path_list)}\nSuccessfully installed {name_list[n]}\n", 'success')
                 n +=1
                 success +=1
@@ -40,3 +39,4 @@ def install_software(package_list, log_callback):
             n +=1
             
     log_callback(f'INSTALLATION FINISHED\nSUCCESSFULLY INSTALLED {success} OUT OF {len(path_list)} PACKAGES', 'success')          
+
